@@ -1,6 +1,7 @@
 body{
-    background: url("/background/1.png") no-repeat;
-    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-color: #242424;
 }
 
 /* Шапка */
@@ -42,26 +43,11 @@ li a{
     float: right;
 }
 
-.dropdown{
-    color:white;
-    background-color: rgba(128, 128, 128, 0.5);
-    border: 2px solid white;
-    margin: 0px 20px;
-    position: relative;
-    display: inline-block;
-}
-
 .dropdown-content{
     display: none;
     position: absolute;
     background-color: rgba(128, 128, 128, 0.5);
-    min-width: 160%;
-    padding: 12px 16px;
     z-index: 1;
-}
-
-.dropdown:hover .dropdown-content{
-    display:block;
 }
 
 .active{
@@ -78,6 +64,10 @@ li a:visited{
 
 li a:hover{
     background-color: rgba(245, 222, 179, 0.5);
+}
+
+li div:hover .dropdown-content{
+    display: block;
 }
 
 /* Контент */
