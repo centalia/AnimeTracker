@@ -1,0 +1,53 @@
+@media(max-width: 500px){
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #242424;
+}
+
+/* Навбар */
+
+/* 
+li a:link{
+    color: rgb(245, 222, 179)
+}
+
+li a:visited{
+    color: rgb(238, 226, 204);
+}
+
+li a:hover{
+    background-color: rgba(245, 222, 179, 0.5);
+}
+
+li div:hover .dropdown-content{
+    display: block;
+} */
+
+.navbar:hover{
+    background-color: rgba(245, 222, 179, 0.5);
+}
+
+.navbar .dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+/* Контент */
+.container{
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 20px;
+    margin: 20px;
+    color:white;
+    border: 2px solid white;
+    text-align: center;
+    font: 20px monospace;
+}
+
+.meme-image{
+    width: 320px;
+    height: 240px;
+    border: 3px solid white;
+}
