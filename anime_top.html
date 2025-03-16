@@ -1,38 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="/ccs/style.css">
+        <!-- Link Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+        <link rel="stylesheet" href="/ccs/style_bootstrap.css">
 
         <title>Мой аниме Лист</title>
 </head>
     <body>
         <header>
-           <img class="logo" src="/img/MyAnimeList_Logo.png">
-            <nav class="nav_container">
-                <ul>
-                    <li><a href="/index.html">Главная</a></li>
-                    <li class="active"><div>
-                        <a href="/anime.html">Аниме</a>
-                        <div class="dropdown-content">
-                            <a href="/anime_top.html">Топ Аниме</a>
-                        </div>
-                    </div>
-                    </li>
-                    <li><a href="/manga.html">Манга</a></li>
-                    <li><a href="/ranobe.html">Ранобэ</a></li>
-                    <li class="float-right"> <a href="/about.html">О сайте</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/index.html">
+                        <img src="/img/MyAnimeList_Logo.png" alt="MyAnimeList" width="30" height="30">
+                        MyAnimeList
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Anime
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Search Anime</a></li>
+                                    <li><a class="dropdown-item" href="#">Top Anime</a></li>
+                                    <li><a class="dropdown-item" href="#">Seasonal Anime</a></li>
+                                    <li><a class="dropdown-item" href="#">Videos</a></li>
+                                    <li><a class="dropdown-item" href="#">Reviews</a></li>
+                                    <li><a class="dropdown-item" href="#">Recommendations</a></li>
+                                </ul>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Manga
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Search Manga</a></li>
+                                    <li><a class="dropdown-item" href="#">Top Manga</a></li>
+                                    <li><a class="dropdown-item" href="#">Adapted to Anime</a></li>
+                                    <li><a class="dropdown-item" href="#">Videos</a></li>
+                                    <li><a class="dropdown-item" href="#">Reviews</a></li>
+                                    <li><a class="dropdown-item" href="#">Recommendations</a></li>
+                                </ul
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Ranobe
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Search Ranobe</a></li>
+                                    <li><a class="dropdown-item" href="#">Top Ranobe</a></li>
+                                    <li><a class="dropdown-item" href="#">Adapted to Anime</a></li>
+                                    <li><a class="dropdown-item" href="#">Videos</a></li>
+                                    <li><a class="dropdown-item" href="#">Reviews</a></li>
+                                    <li><a class="dropdown-item" href="#">Recommendations</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about.html">About</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>    
+                </div>
             </nav>
         </header>
-
         <div class="container">
-            <img class="meme-image" src="/img/kotik.webp" alt="Тут котик">
-            <p>Я — КОТ<br>
-            Здесь будет аниме</p>
-
+            <div class="row row-cols-1 row-cols-md-4 g-lg-4">
+                <div class="col">
+                    <div class="card text-bg-dark">
+                        <img src="https://cdn.myanimelist.net/images/anime/1015/138006.jpg" class="card-img opacity-50" alt="...">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Sousou no Frieren</h5>
+                            <br>
+                            <p class="card-text fs-6 lh-1">During their decade-long quest to defeat the Demon King, the members of the hero&#039;s party—Himmel himself, the priest Heiter, the dwarf warrior Eisen, and the elven mage Frieren—forge bonds through...</p>
+                            <a href="#" class="btn btn-primary">Read more...</a>
+                        </div>
+                    </div>                          
+                </div>
+                <div class="col">
+                    <div class="card text-bg-dark">
+                        <img src="https://cdn.myanimelist.net/images/anime/1208/94745.jpg" class="card-img opacity-50" alt="...">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Fullmetal Alchemist: Brotherhood</h5>
+                            <br>
+                            <p class="card-text fs-6 lh-1">After a horrific alchemy experiment goes wrong in the Elric household, brothers Edward and Alphonse are left in a catastrophic new reality. Ignoring the alchemical principle banning human transmutation...</p>
+                            <a href="#" class="btn btn-primary">Read more...</a>
+                        </div>
+                    </div>                          
+                </div>
+                <div class="col">
+                    <div class="card text-bg-dark">
+                        <img src="https://cdn.myanimelist.net/images/anime/1935/127974l.jpg" class="card-img opacity-50" alt="...">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Stein;Gate</h5>
+                            <p class="card-text">Eccentric scientist Rintarou Okabe has a never-ending thirst for scientific exploration. Together with his ditzy...</p>
+                            <a href="#" class="btn btn-primary">Read more...</a>
+                        </div>
+                    </div>                          
+                </div>
+                <div class="col">
+                    <div class="card text-bg-dark">
+                        <img src="https://cdn.myanimelist.net/images/anime/1517/100633l.jpg" class="card-img opacity-50" alt="...">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Shingeki no Kyojin Season 3 Part 2
+                            </h5>
+                            <p class="card-text">Seeking to restore humanity&#039;s diminishing hope, the Survey Corps embark on a mission to retake Wall Maria...</p>
+                            <a href="#" class="btn btn-primary">Read more...</a>
+                        </div>
+                    </div>                          
+                </div>
+            </div>
         </div>    
+        
+        <!-- Link Bootstrap CSS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
 </body>
 </html>
